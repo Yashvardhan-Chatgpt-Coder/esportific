@@ -8,19 +8,115 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-plus-jakarta-sans);
+  --font-mono: var(--font-plus-jakarta-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta-sans), sans-serif;
+}
+
+a,
+button {
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    opacity 160ms ease;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.9;
+}
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
+.design-belt {
+  position: relative;
+  overflow: hidden;
+  contain: layout paint;
+}
+
+.design-belt-track {
+  display: flex;
+  flex-direction: column;
+  animation-duration: 44s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.design-belt-up {
+  animation-name: design-belt-up;
+}
+
+.design-belt-down {
+  animation-name: design-belt-down;
+}
+
+.design-placeholder {
+  width: 100%;
+  min-height: 110px;
+  flex: none;
+  overflow: hidden;
+  border: 1px solid #cbd4df;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #eef2f6 0%, #e5ebf2 100%);
+}
+
+@media (min-width: 640px) {
+  .design-placeholder {
+    min-height: 120px;
+    border-radius: 12px;
+  }
+}
+
+@keyframes design-belt-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes design-belt-down {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes testimonial-scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.testimonial-track {
+  display: flex;
+  flex-direction: column;
+  animation: testimonial-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+.testimonial-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .design-belt-track,
+  .testimonial-track {
+    animation-play-state: paused;
+  }
 }
