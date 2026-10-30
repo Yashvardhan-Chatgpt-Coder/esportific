@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://esportific.com"),
+  metadataBase: new URL("https://esportific.rangrove.com"),
   title: {
     default: "Esportific – Esports Tournament Software | Event & Standings Platform",
     template: "Esportific – %s",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Esportific is an all-in-one esports tournament software built for gaming organizers. Manage team pools, set custom placement and kill scoring rules, import match results via Excel, and download points table graphics.",
   applicationName: "Esportific",
-  authors: [{ name: "Esportific", url: "https://esportific.com" }],
+  authors: [{ name: "Esportific", url: "https://esportific.rangrove.com" }],
   creator: "Esportific",
   publisher: "Esportific",
   category: "technology",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "Esportific – Esports Tournament Software | Event & Standings Platform",
     description:
       "Create and manage esports tournaments from one simple dashboard. Manage team pools, custom scoring rules, Excel imports, and ready-to-share standings graphics.",
-    url: "https://esportific.com",
+    url: "https://esportific.rangrove.com",
     siteName: "Esportific",
     locale: "en_US",
     type: "website",
@@ -106,12 +106,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://esportific.com/#organization",
+      "@id": "https://esportific.rangrove.com/#organization",
       name: "Esportific",
-      url: "https://esportific.com",
+      url: "https://esportific.rangrove.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://esportific.com/Brand/Logo.png",
+        url: "https://esportific.rangrove.com/Brand/Logo.png",
         width: 1153,
         height: 267,
       },
@@ -123,25 +123,25 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://esportific.com/#website",
-      url: "https://esportific.com",
+      "@id": "https://esportific.rangrove.com/#website",
+      url: "https://esportific.rangrove.com",
       name: "Esportific",
       publisher: {
-        "@id": "https://esportific.com/#organization",
+        "@id": "https://esportific.rangrove.com/#organization",
       },
       inLanguage: "en-US",
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://esportific.com/#software",
+      "@id": "https://esportific.rangrove.com/#software",
       name: "Esportific",
       applicationCategory: "GameApplication",
       operatingSystem: "Web, Android",
-      url: "https://esportific.com",
+      url: "https://esportific.rangrove.com",
       description:
         "All-in-one esports tournament software for gaming organizers to manage teams, calculate placement and kill points automatically, import Excel sheets, and export standings graphics.",
       screenshot:
-        "https://esportific.com/Home/Hero/Esportific%20Hero%20UI%20Screenshot.png",
+        "https://esportific.rangrove.com/Home/Hero/Esportific%20Hero%20UI%20Screenshot.png",
       offers: {
         "@type": "Offer",
         price: "0",

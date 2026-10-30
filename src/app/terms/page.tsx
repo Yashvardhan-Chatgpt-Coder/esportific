@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Esportific – Terms and Conditions",
     description:
       "Read the Terms and Conditions for using Esportific esports tournament management software.",
-    url: "https://esportific.com/terms",
+    url: "https://esportific.rangrove.com/terms",
   },
 };
 

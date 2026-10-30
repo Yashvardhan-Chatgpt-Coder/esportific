@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://esportific.com";
+  const baseUrl = "https://esportific.rangrove.com";
   const currentDate = new Date().toISOString();
 
   return [

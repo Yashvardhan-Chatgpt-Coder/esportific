@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Esportific – Privacy Policy",
     description:
       "Read the Esportific Privacy Policy to learn what information our esports tournament software collects and how your tournament data is protected.",
-    url: "https://esportific.com/privacy",
+    url: "https://esportific.rangrove.com/privacy",
   },
 };
 

@@ -28,7 +28,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/coming-soon"],
       },
     ],
-    sitemap: "https://esportific.com/sitemap.xml",
-    host: "https://esportific.com",
+    sitemap: "https://esportific.rangrove.com/sitemap.xml",
+    host: "https://esportific.rangrove.com",
   };
 }
